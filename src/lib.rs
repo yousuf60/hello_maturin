@@ -1,8 +1,10 @@
 use pyo3::prelude::*;
+mod say;
 
 #[pyfunction]
 fn tell() -> String {
-    let phrase: String = String::from("testing hello");
+	say::tell();
+    let phrase: String = String::from("Hello");
     phrase
 }
 

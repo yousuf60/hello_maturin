@@ -22,7 +22,6 @@ impl Chars{
 	}
 	
 }
-pub fn tell(){
-	let hello = Chars::new().human_regards();
-	println!("{:?}", hello);
+pub fn tell()->String{
+	Chars::new().human_regards()
 }

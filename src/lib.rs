@@ -3,9 +3,8 @@ mod say;
 
 #[pyfunction]
 fn tell() -> String {
-	say::tell();
-    let phrase: String = String::from("Hello");
-    phrase
+	say::tell()
+	
 }
 
 #[pymodule]
